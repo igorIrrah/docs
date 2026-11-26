@@ -118,7 +118,7 @@ Servidor: `https://api.z-api.io`. As rotas de instância seguem `/instances/{{in
 - [Enviar botões com imagem](https://developer.z-api.io/message/send-button-list-image.md): Envia uma imagem com botões de resposta rápida `POST /instances/{instanceId}/token/{token}/send-button-list`
 - [Enviar botões com vídeo](https://developer.z-api.io/message/send-button-list-video.md): Envia um vídeo com botões de resposta rápida `POST /instances/{instanceId}/token/{token}/send-button-list`
 - [Enviar lista de opções](https://developer.z-api.io/message/send-option-list.md): Envia uma mensagem com lista de opções selecionáveis `POST /instances/{instanceId}/token/{token}/send-option-list`
-- [Enviar botão OTP](https://developer.z-api.io/message/send-button-otp.md): Envia uma mensagem com botão para copiar um valor `POST /instances/{instanceId}/token/{token}/send-button-otp`
+- [Enviar botão OTP (Depreciado)](https://developer.z-api.io/message/send-button-otp.md): Depreciado, não é exibido no celular do destinatário. Envia uma mensagem com botão para copiar um valor `POST /instances/{instanceId}/token/{token}/send-button-otp`
 - [Enviar botão PIX](https://developer.z-api.io/message/send-button-pix.md): Envia uma mensagem com chave PIX e botão para copiar `POST /instances/{instanceId}/token/{token}/send-button-pix`
 - [Enviar carrossel](https://developer.z-api.io/message/send-carousel.md): Envia uma mensagem de carrossel com imagens, texto e botões de ação `POST /instances/{instanceId}/token/{token}/send-carousel`
 - [Deletar mensagens](https://developer.z-api.io/message/delete-message.md): Apaga uma mensagem enviada ou recebida em um chat `DELETE /instances/{instanceId}/token/{token}/messages`

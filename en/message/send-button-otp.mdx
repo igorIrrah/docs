@@ -1,5 +1,5 @@
 ---
-title: "Send OTP button"
+title: "Send OTP button (Deprecated)"
 api: "POST /instances/{instanceId}/token/{token}/send-button-otp"
 description: "Send a message with a copy-to-clipboard button"
 ---
@@ -12,13 +12,13 @@ import Token from '/snippets/en/params/token.mdx'
 With this method you can send text messages with a button to copy a value.
 
 <Warning>
-Button sending is currently available, but there are some decisive factors for it to work. For more details check the [Button Status](/en/tips/button-status) topic.
-</Warning>
+This endpoint is **deprecated**. Due to a WhatsApp limitation, messages with the "Copy code" button are not displayed on the recipient's phone.
 
-#### Example on the application
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/images/send-button-otp-eng.jpeg" width="400" />
-</div>
+- **Displayed:** on the sender's phone, on the sender's WhatsApp Web and on the recipient's WhatsApp Web.
+- **Not displayed:** on the recipient's phone, even when the API returns 200.
+
+To send OTP codes, send the code in the message text using the [Send text](/en/message/send-text) endpoint.
+</Warning>
 
 ---
 
