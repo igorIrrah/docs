@@ -1,5 +1,5 @@
 ---
-title: "Enviar botão OTP"
+title: "Enviar botão OTP (Depreciado)"
 api: "POST /instances/{instanceId}/token/{token}/send-button-otp"
 description: "Envia uma mensagem com botão para copiar um valor"
 ---
@@ -12,13 +12,13 @@ import Token from '/snippets/pt/params/token.mdx'
 Neste método você poderá enviar mensagens de texto com botão para copiar um valor.
 
 <Warning>
-Envios de botões atualmente se encontram disponíveis, porém possui alguns fatores decisivos para o funcionamento. Para mais detalhes acesse o tópico [Funcionamento dos Botões](/tips/button-status).
-</Warning>
+Este endpoint está **depreciado**. Por uma limitação do WhatsApp, a mensagem com o botão "Copiar código" não é exibida no celular do destinatário.
 
-#### Exemplo no aplicativo
-<div style={{ display: "flex", justifyContent: "center" }}>
-  <img src="/images/SendButtonOtp.jpeg" width="400" />
-</div>
+- **Aparece:** no celular do remetente, no WhatsApp Web do remetente e no WhatsApp Web do destinatário.
+- **Não aparece:** no celular do destinatário, mesmo com a API retornando 200.
+
+Para enviar códigos OTP, envie o código no texto da mensagem pelo endpoint [Enviar texto](/message/send-text).
+</Warning>
 
 ---
 
